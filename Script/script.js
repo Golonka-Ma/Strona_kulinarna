@@ -1,11 +1,37 @@
 function navigateTo(page) {
-    // Tu możesz dodać kod do przekierowywania do odpowiednich stron.
-    // Na razie jest tylko console.log na potrzeby przykładu.
-    console.log(`Navigating to ${page} page.`);
+    if (page === 'home') {
+        window.location.href = 'home_page.html';
+    } else if (page === 'recipes') {
+        window.location.href = 'recipes.html';
+    } else if (page === 'about') {
+        window.location.href = 'about.html';
+    } else {
+        console.log(`Nieznana strona: ${page}`);
+    }
 }
 
-function searchRecipes() {
-    // Tu możesz dodać kod obsługujący wyszukiwanie przepisów.
-    // Na razie jest tylko console.log na potrzeby przykładu.
-    console.log('Searching for recipes.');
+function navigateToFacebook() {
+    window.location.href = 'https://www.facebook.com';
+}
+function navigateToYT() {
+    window.location.href = 'https://www.youtube.com';
+}
+function navigateToIns() {
+    window.location.href = 'https://www.instagram.com';
+}
+function navigateToPin() {
+    window.location.href = 'https://pl.pinterest.com';
+}
+
+function toggleMoreInfo() {
+    var moreInfo = document.getElementById('more-info');
+    var toggleButton = document.getElementById('toggle-button');
+
+    if (moreInfo.style.display === 'none') {
+        moreInfo.style.display = 'block';
+        toggleButton.innerText = 'Ukryj szczegóły';
+    } else {
+        moreInfo.style.display = 'none';
+        toggleButton.innerText = 'Czytaj więcej';
+    }
 }
