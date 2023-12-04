@@ -1,3 +1,12 @@
+$(document).ready(function(){
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000, // Czas trwania jednego slajdu w milisekundach (2 sekundy w tym przypadku)
+        dots: true, // Pokazuje punkty nawigacyjne
+        arrows: false // Ukrywa strzałki nawigacyjne
+    });
+});
+
 function navigateTo(page) {
     if (page === 'home') {
         window.location.href = 'home_page.html';

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smaki kuchni świata</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Script/script.js"></script>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 
@@ -21,45 +25,43 @@
         </nav>
     </header>
     <div class="baner1">
-        <img src="Res/img/baner1.PNG" alt="Delicious Dish">
+        <div class="slider">
+            <img src="Res/img/baner1.PNG" alt="Delicious Dish">
+            <img src="Res/img/baner2.PNG" alt="Delicious Dish">
+            <img src="Res/img/baner3.PNG" alt="Delicious Dish">
+        </div>
     </div>
 
     <section class="recipe">
-        
         <h2>Strona główna</h2>
-        
-
-
-
-        
     </section>
-<footer>
-    <div class="footer_text">
-        <p> <i class="fa fa-coffee"></i>  Smaki kuchni świata</p>
-    </div>
-    <div class="wrapper">
-        <div class="button" onclick="navigateToFacebook()">
-            <div class="icon">
-                <i class="fa fa-facebook"></i>
+    
+    <footer>
+        <div class="footer_text">
+            <p> <i class="fa fa-coffee"></i>  Smaki kuchni świata</p>
+        </div>
+        <div class="wrapper">
+            <div class="button" onclick="navigateToFacebook()">
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToYT()">
+                <div class="icon">
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToIns()">
+                <div class="icon">
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToPin()">
+                <div class="icon">
+                    <i class="fa fa-pinterest"></i>
+                </div>
             </div>
         </div>
-        <div class="button" onclick="navigateToYT()">
-            <div class="icon">
-                <i class="fa fa-youtube-play"></i>
-            </div>
-        </div>
-        <div class="button" onclick="navigateToIns()">
-            <div class="icon">
-                <i class="fa fa-instagram"></i>
-            </div>
-        </div>
-        <div class="button" onclick="navigateToPin()">
-            <div class="icon">
-                <i class="fa fa-pinterest"></i>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="Script/script.js"></script>
+    </footer>
 </body>
 </html>
