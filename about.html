@@ -25,6 +25,9 @@
                 <a href="#">Contact</a>
             </nav>
         </header>
+    </header>
+
+
     <div class="baner1">
         <div class="slider">
             <img src="Res/img/baner1.PNG" alt="Delicious Dish">
@@ -38,18 +41,18 @@
         <h1>Inforamcje o nas</h1>
         <br>
         <p>Nasza misja to nie tylko dzielenie się przepisami, ale także edukacja kulinarnej świadomości. Chcemy pokazać, że gotowanie to nie tylko przyjemność dla podniebienia, ale również sztuka, która łączy kultury, tradycje i ludzi z różnych zakątków świata.</p>
-
-<p>Przygotowując nasze artykuły, skupiamy się na świeżości składników, prostocie wykonania, a jednocześnie na niepowtarzalności smaku. Każdy przepis, który prezentujemy, jest rezultatem pasji, eksperymentów kulinarnych i poszukiwań najlepszych smaków.</p>
-
-<p>Nie ważne, czy jesteś doświadczonym kucharzem czy początkującym entuzjastą kuchni – nasza strona jest dla Ciebie. Znajdziesz tutaj inspiracje na każdą okazję, od szybkich dań na co dzień po wyjątkowe potrawy na specjalne okazje.</p>
-
-<p>Zapraszamy Cię do odkrywania razem z nami sztuki kulinarnej i doświadczania radości z gotowania oraz jedzenia. Bądź częścią naszej społeczności, gdzie smaki świata łączą się z miłością do jedzenia.</p>
-<br>
-
-<button id="toggle-button" onclick="toggleMoreInfo()">Czytaj więcej</button>
-<br><br>
-
-<div id="more-info" style="display: none;">
+    
+    <p>Przygotowując nasze artykuły, skupiamy się na świeżości składników, prostocie wykonania, a jednocześnie na niepowtarzalności smaku. Każdy przepis, który prezentujemy, jest rezultatem pasji, eksperymentów kulinarnych i poszukiwań najlepszych smaków.</p>
+    
+    <p>Nie ważne, czy jesteś doświadczonym kucharzem czy początkującym entuzjastą kuchni – nasza strona jest dla Ciebie. Znajdziesz tutaj inspiracje na każdą okazję, od szybkich dań na co dzień po wyjątkowe potrawy na specjalne okazje.</p>
+    
+    <p>Zapraszamy Cię do odkrywania razem z nami sztuki kulinarnej i doświadczania radości z gotowania oraz jedzenia. Bądź częścią naszej społeczności, gdzie smaki świata łączą się z miłością do jedzenia.</p>
+    <br>
+    
+    <button id="toggle-button" onclick="toggleMoreInfo()">Czytaj więcej</button>
+    <br><br>
+    
+    <div id="more-info" style="display: none;">
     
     <h1>Kilka żartów na poprawę humoru</h1>
     <br>
@@ -62,41 +65,43 @@
     - To pani teraz właśnie je tę różnicę.<br>
     <br>
     <br>
-
+    
     Gość drogiej restauracji składa u kelnera zamówienie:<br>
-- Poproszę dwa ugotowane jajka. Jedno tak miękkie, że zarówno żółtko i białko ma być w stanie płynnym, a drugie takie twarde, żebym miał kłopoty z jego pogryzieniem. Do tego poproszę również dwa plasterki boczku, zimne, ale z jednej strony zwęglone na czarno oraz spalonego tosta. Masełko powinno być tak zmrożone, żebym za nic w świecie nie mógł go rozsmarować. Proszę także o słabą kawę, taką w temperaturze pokojowej.
-- To bardzo skomplikowane zamówienie szanowny panie, nie jestem pewien, czy nasz kucharz tak potrafi… <br>
-– odpowiada kelner.<br>
-- No przecież wczoraj potrafił!<br>
-</div>
-</section>
-<footer>
-    <div class="footer_text">
-        <p> <i class="fa fa-coffee"></i>  Smaki kuchni świata</p>
+    - Poproszę dwa ugotowane jajka. Jedno tak miękkie, że zarówno żółtko i białko ma być w stanie płynnym, a drugie takie twarde, żebym miał kłopoty z jego pogryzieniem. Do tego poproszę również dwa plasterki boczku, zimne, ale z jednej strony zwęglone na czarno oraz spalonego tosta. Masełko powinno być tak zmrożone, żebym za nic w świecie nie mógł go rozsmarować. Proszę także o słabą kawę, taką w temperaturze pokojowej.
+    - To bardzo skomplikowane zamówienie szanowny panie, nie jestem pewien, czy nasz kucharz tak potrafi… <br>
+    – odpowiada kelner.<br>
+    - No przecież wczoraj potrafił!<br>
     </div>
-    <div class="wrapper">
-        <div class="button" onclick="navigateToFacebook()">
-            <div class="icon">
-                <i class="fa fa-facebook"></i>
+    </section>
+    
+    <footer>
+        <div class="footer_text">
+            <p> <i class="fa fa-coffee"></i>  Smaki kuchni świata</p>
+        </div>
+        <div class="wrapper">
+            <div class="button" onclick="navigateToFacebook()">
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToYT()">
+                <div class="icon">
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToIns()">
+                <div class="icon">
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToPin()">
+                <div class="icon">
+                    <i class="fa fa-pinterest"></i>
+                </div>
             </div>
         </div>
-        <div class="button" onclick="navigateToYT()">
-            <div class="icon">
-                <i class="fa fa-youtube-play"></i>
-            </div>
-        </div>
-        <div class="button" onclick="navigateToIns()">
-            <div class="icon">
-                <i class="fa fa-instagram"></i>
-            </div>
-        </div>
-        <div class="button" onclick="navigateToPin()">
-            <div class="icon">
-                <i class="fa fa-pinterest"></i>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="Script/script.js"></script>
+    </footer>
 </body>
 </html>
+
+
