@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smaki kuchni świata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Script/script.js"></script>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <header>
+        <header class="header">
+            <a href="#" class="logo">Smaki kuchni Świata</a>
+            <nav class="navbar">
+                <a href="home_page.html">Strona główna</a>
+                <a href="about.html">O nas</a>
+                <a href="recipes.html">Przepisy</a>
+                <a href="services.html">Usługi</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+        </header>
+    </header>
+
+
+    <div class="baner1">
+        <div class="slider">
+            <img src="Res/img/baner1.PNG" alt="Delicious Dish">
+            <img src="Res/img/baner2.PNG" alt="Delicious Dish">
+            <img src="Res/img/baner3.PNG" alt="Delicious Dish">
+        </div>
+    </div>
+
+    <section class="recipe">
+        <h2>Zbiór przepisów</h2>
+        <div class="przepisy">
+            <div>
+                <img src="Res/img/hotdog.PNG" alt="Hot-dog">
+                <div class="przepis-content">
+                    <h3>Hot-dog</h3>
+                    <p> Gorąca parówka lub kiełbasa z zimnym sosem (majonez, ketchup) 
+                        serwowana najczęściej w długiej bułce. Danie typowo amerykańskie 
+                        oraz przykład jedzenia typu fast food.</p>
+                    <a href="przepisy/hotdog.html">Przejdź do przepisu</a>
+                </div>
+            </div>
+            <div>
+                <img src="Res/img/Pizza.PNG" alt="Pizza">
+                <div class="przepis-content">
+                    <h3>Pizza</h3>
+                    <p> Potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie, gdzie powstały jej nowe warianty. 
+                        Jest to płaski placek z ciasta drożdżowego (focaccia), z sosem pomidorowym, posypany tartym serem</p>
+                    <a href="przepisy/pizza.html">Przejdź do przepisu</a>
+                </div>
+            </div>
+            <div>
+                <img src="Res/img/Frytki.PNG" alt="Frytki">
+                <div class="przepis-content">
+                    <h3>Frytki</h3>
+                    <p>Tradycyjnie, w kraju pochodzenia czyli Belgii, pokrojone w kształt słupków i smażone w 
+                    głębokim tłuszczu ziemniaki albo inne warzywa. Idealne na wieczór z przyjaciółmi, robione również z batatów </p>
+                    <a href="przepisy/frytki.html">Przejdź do przepisu</a>
+                </div>
+            </div>
+        </div>
+        <div class="przepisy">
+            <div>
+                <img src="Res/img/makaron.jpg" alt="makaron">
+                <div class="przepis-content_mak">
+                    <h3>Makaron rigatoni </h3>
+                    <p> Makaron rigatoni zapiekany z mielonym mięsem to sycące danie kuchni włoskiej, które zachwyca harmonią smaków i aromatów. </p>
+                    <a href="przepisy/makaron.html">Przejdź do przepisu</a>
+                </div>
+            </div>
+            <div class="kebab">
+                <img src="Res/img/shishkebab.jpg" alt="kebab">
+                <div class="przepis-content_keb">
+                    <h3>Shish Kebab</h3>
+                    <p>Shish Kebab to klasyczne danie kuchni bliskowschodniej i śródziemnomorskiej, które zdobyło popularność na całym świecie ze względu na swoją prostotę i wyjątkowy smak. </p>
+                    <a href="przepisy/kebab.html">Przejdź do przepisu</a>
+                </div>
+            </div>
+            <div>
+                <img src="Res/img/tatr.jpg" alt="Frytki">
+                <div class="przepis-content_rec">
+                    <h3 >Tatar z łosia</h3>
+                    Tatar z łososia to wykwintne danie surowego łososia,przyprawione koperkiem i podane z grzankami. Bardzo często również z cebulą oraz oliwą w zależności od rejonu Polski.  
+                   </p>
+                    <a href="przepisy/tatar.html">Przejdź do przepisu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer_text">
+            <p> <i class="fa fa-coffee"></i>  Smaki kuchni świata</p>
+        </div>
+        <div class="wrapper">
+            <div class="button" onclick="navigateToFacebook()">
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToYT()">
+                <div class="icon">
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToIns()">
+                <div class="icon">
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToPin()">
+                <div class="icon">
+                    <i class="fa fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

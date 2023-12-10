@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smaki kuchni świata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Script/script.js"></script>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <header>
+        <header class="header">
+            <a href="#" class="logo">Smaki kuchni Świata</a>
+            <nav class="navbar">
+                <a href="home_page.html">Strona główna</a>
+                <a href="about.html">O nas</a>
+                <a href="recipes.html">Przepisy</a>
+                <a href="services.html">Usługi</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+        </header>
+    </header>
+
+
+    <div class="baner1">
+        <div class="slider">
+            <img src="Res/img/baner1.PNG" alt="Delicious Dish">
+            <img src="Res/img/baner2.PNG" alt="Delicious Dish">
+            <img src="Res/img/baner3.PNG" alt="Delicious Dish">
+        </div>
+    </div>
+
+    <section class="about_us">
+        
+        <h1>Inforamcje o nas</h1>
+        <br>
+        <p>Nasza misja to nie tylko dzielenie się przepisami, ale także edukacja kulinarnej świadomości. Chcemy pokazać, że gotowanie to nie tylko przyjemność dla podniebienia, ale również sztuka, która łączy kultury, tradycje i ludzi z różnych zakątków świata.</p>
+    
+    <p>Przygotowując nasze artykuły, skupiamy się na świeżości składników, prostocie wykonania, a jednocześnie na niepowtarzalności smaku. Każdy przepis, który prezentujemy, jest rezultatem pasji, eksperymentów kulinarnych i poszukiwań najlepszych smaków.</p>
+    
+    <p>Nie ważne, czy jesteś doświadczonym kucharzem czy początkującym entuzjastą kuchni – nasza strona jest dla Ciebie. Znajdziesz tutaj inspiracje na każdą okazję, od szybkich dań na co dzień po wyjątkowe potrawy na specjalne okazje.</p>
+    
+    <p>Zapraszamy Cię do odkrywania razem z nami sztuki kulinarnej i doświadczania radości z gotowania oraz jedzenia. Bądź częścią naszej społeczności, gdzie smaki świata łączą się z miłością do jedzenia.</p>
+    <br>
+    
+    <button id="toggle-button" onclick="toggleMoreInfo()">Czytaj więcej</button>
+    <br><br>
+    
+    <div id="more-info" style="display: none;">
+    
+    <h1>Kilka żartów na poprawę humoru</h1>
+    <br>
+    W restauracji siedzi Francuz z pewną kobietą. Z powodu nieznajomości języka ona prosi go, żeby wybrał dla niej jakieś danie. Ten patrzy szybko w menu i zamawia danie o egzotycznej i długiej nazwie „Argadon de markiz alojet”. Po dłuższej chwili kelner przynosi danie do stołu. Madame zaczyna jeść i pyta:<br>
+    - Znakomite, ale można wiedzieć z czego jest to danie?<br>
+    - Jakby to wytłumaczyć... Wie pani co to jest krowa?<br>
+    - Oczywiście, że wiem!<br>
+    - I pewnie wie pani co to jest byk?<br>
+    - No tak tak, wiem.<br>
+    - To pani teraz właśnie je tę różnicę.<br>
+    <br>
+    <br>
+    
+    Gość drogiej restauracji składa u kelnera zamówienie:<br>
+    - Poproszę dwa ugotowane jajka. Jedno tak miękkie, że zarówno żółtko i białko ma być w stanie płynnym, a drugie takie twarde, żebym miał kłopoty z jego pogryzieniem. Do tego poproszę również dwa plasterki boczku, zimne, ale z jednej strony zwęglone na czarno oraz spalonego tosta. Masełko powinno być tak zmrożone, żebym za nic w świecie nie mógł go rozsmarować. Proszę także o słabą kawę, taką w temperaturze pokojowej.
+    - To bardzo skomplikowane zamówienie szanowny panie, nie jestem pewien, czy nasz kucharz tak potrafi… <br>
+    – odpowiada kelner.<br>
+    - No przecież wczoraj potrafił!<br>
+    </div>
+    </section>
+    
+    <footer>
+        <div class="footer_text">
+            <p> <i class="fa fa-coffee"></i>  Smaki kuchni świata</p>
+        </div>
+        <div class="wrapper">
+            <div class="button" onclick="navigateToFacebook()">
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToYT()">
+                <div class="icon">
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToIns()">
+                <div class="icon">
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="button" onclick="navigateToPin()">
+                <div class="icon">
+                    <i class="fa fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
