@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../Script/script.js"></script>
-    <link rel="stylesheet" href="../style/styles.css">
+    <script src="Script/script.js"></script>
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
@@ -18,46 +18,41 @@
         <header class="header">
             <a href="#" class="logo">Smaki kuchni Świata</a>
             <nav class="navbar">
-                <a href="../home_page.html">Strona główna</a>
-                <a href="../about.html">O nas</a>
-                <a href="../recipes.html">Przepisy</a>
-                <a href="../services.html">Usługi</a>
-                <a href="../contact.html">Kontakt</a>
+                <a href="home_page.html">Strona główna</a>
+                <a href="about.html">O nas</a>
+                <a href="recipes.html">Przepisy</a>
+                <a href="services.html">Usługi</a>
+                <a href="contact.html">Kontakt</a>
             </nav>
         </header>
     </header>
 
-    <div class="baner_przepisy">
-        <div class="baner-overlay">
-            <h1>FRYTKI DOMOWE</h1>
+
+    <div class="baner1">
+        <div class="slider">
+            <img src="Res/img/baner1.PNG" alt="Delicious Dish">
+            <img src="Res/img/baner2.PNG" alt="Delicious Dish">
+            <img src="Res/img/baner3.PNG" alt="Delicious Dish">
         </div>
-        <img class="baner_recipe" src="../Res/img/Frytki.PNG" alt="Delicious Dish">
     </div>
 
-    <section class="recipe_tresc">
-        <div class="left_skladniki">
-            <h3>Składniki:</h3><br>
-            <ul class="skladniki">
-                <li>4 ziemniaki</li>
-                <li>2 łyżki oleju roślinnego</li>
-                <li>Sól do smaku</li>
-                <li>Pieprz do smaku</li>
-                <li>1 łyżeczka słodkiej papryki w proszku (opcjonalnie)</li>
-                <li>1 łyżeczka czosnku w proszku (opcjonalnie)</li>
-            </ul><br>
-        </div>
+    <section class="recipe">
+        <h2>Napisz do nas: </h2>
+        <form id="contactForm">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required><br>
 
-        <div class="przepis_tresc">
-            <h3>Przepis:</h3><br>
-            <ol>
-                <li>Umyj i obierz ziemniaki.</li>
-                <li>Przekrój ziemniaki na kawałki o grubości około 1 cm.</li>
-                <li>W misce wymieszaj pokrojone ziemniaki z olejem, solą, pieprzem, słodką papryką i czosnkiem w proszku (opcjonalnie).</li>
-                <li>Rozłóż ziemniaki na blasze wyłożonej papierem do pieczenia.</li>
-                <li>Piecz w rozgrzanym do 220 stopni Celsjusza piekarniku przez około 30-40 minut, często mieszając, aż frytki staną się złociste i chrupiące.</li>
-                <li>Podawaj gorące, posypane dodatkową solą, jeśli potrzeba.</li>
-            </ol>
-        </div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="subject">Temat:</label>
+            <input type="text" id="subject" name="subject" required><br>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button id="submit_button" type="submit">Wyślij</button>
+        </form>
     </section>
 
     <footer>
@@ -89,3 +84,5 @@
     </footer>
 </body>
 </html>
+
+

@@ -32,3 +32,26 @@ function toggleMoreInfo() {
         toggleButton.innerText = 'Czytaj więcej';
     }
 }
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function() {
+        var arrow = document.getElementById("arrow");
+        if (window.scrollY > 100) {
+            arrow.style.opacity = "1";
+        } else {
+            arrow.style.opacity = "0";
+        }
+    });
+
+    document.getElementById("arrow").addEventListener("click", function() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
+    });
+});
+
