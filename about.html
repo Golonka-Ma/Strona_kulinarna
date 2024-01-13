@@ -24,6 +24,21 @@
                 <a href="services.html">Usługi</a>
                 <a href="contact.html">Kontakt</a>
             </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="mobile">
+                <p class="remove"><i class="fa fa-remove"></i></p>
+                <div>
+                    <a href="home_page.html">Strona główna</a>
+                    <a href="about.html">O nas</a>
+                    <a href="recipes.html">Przepisy</a>
+                    <a href="services.html">Usługi</a>
+                    <a href="contact.html">Kontakt</a>
+                </div>
+            </nav>
         </header>
     </header>
 
@@ -48,6 +63,29 @@
     
     <p>Zapraszamy Cię do odkrywania razem z nami sztuki kulinarnej i doświadczania radości z gotowania oraz jedzenia. Bądź częścią naszej społeczności, gdzie smaki świata łączą się z miłością do jedzenia.</p>
     <br>
+
+    <h1>Gdzie nas znaleźć</h1>
+    <br>
+<div id="mapa" style="height: 400px; width: 100%;"></div> 
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJRMUpIYWZ6wLJdPGCujOqAzfOJeXt76E&callback=initMap">
+</script>
+
+<script>
+    function initMap() {
+        var tarnow = {lat: 50.01381, lng: 20.98698}; // Współrzędne Tarnowa
+        var map = new google.maps.Map(document.getElementById('mapa'), {
+            zoom: 14,
+            center: tarnow
+        });
+        var marker = new google.maps.Marker({
+            position: tarnow,
+            map: map
+        });
+    }
+</script>
+<br>
     
     <button id="toggle-button" onclick="toggleMoreInfo()">Czytaj więcej</button>
     <br><br>
@@ -101,6 +139,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Script/script.js"></script>
 </body>
 </html>
 

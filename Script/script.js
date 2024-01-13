@@ -33,25 +33,27 @@ function toggleMoreInfo() {
     }
 }
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-});
+function slideMobileMenu(value){
+    const menu = document.querySelector('.mobile');
+    menu.style.transform = `translateX(${value})`;
+}
 
-document.addEventListener("DOMContentLoaded", function() {
-    window.addEventListener("scroll", function() {
-        var arrow = document.getElementById("arrow");
-        if (window.scrollY > 100) {
-            arrow.style.opacity = "1";
-        } else {
-            arrow.style.opacity = "0";
-        }
+document.querySelectorAll('.przepis-content').forEach(function(przepisContent) {
+    const opis = przepisContent.querySelector('p');
+    const oryginalnyTekst = opis.textContent;
+    const składniki = opis.getAttribute('data-składniki');
+
+    przepisContent.addEventListener('mouseenter', function() {
+        opis.textContent = składniki;
     });
 
-    document.getElementById("arrow").addEventListener("click", function() {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: "smooth"
-        });
+    przepisContent.addEventListener('mouseleave', function() {
+        opis.textContent = oryginalnyTekst;
     });
 });
 
+const burger = document.querySelector('.burger');
+const remove = document.querySelector('.remove');
+
+burger.addEventListener('click', () => slideMobileMenu('0%'));
+remove.addEventListener('click', () => slideMobileMenu('100%'));

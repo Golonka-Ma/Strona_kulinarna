@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="Script/script.js"></script>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 
@@ -23,6 +20,21 @@
                 <a href="recipes.html">Przepisy</a>
                 <a href="services.html">Usługi</a>
                 <a href="contact.html">Kontakt</a>
+            </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="mobile">
+                <p class="remove"><i class="fa fa-remove"></i></p>
+                <div>
+                    <a href="home_page.html">Strona główna</a>
+                    <a href="about.html">O nas</a>
+                    <a href="recipes.html">Przepisy</a>
+                    <a href="services.html">Usługi</a>
+                    <a href="contact.html">Kontakt</a>
+                </div>
             </nav>
         </header>
     </header>
@@ -43,32 +55,35 @@
                 <img src="Res/img/hotdog.PNG" alt="Hot-dog">
                 <div class="przepis-content">
                     <h3>Hot-dog</h3>
-                    <p> Gorąca parówka lub kiełbasa z zimnym sosem (majonez, ketchup) 
-                        serwowana najczęściej w długiej bułce. Danie typowo amerykańskie 
-                        oraz przykład jedzenia typu fast food.</p>
-                    <a href="przepisy/hotdog.html">Przejdź do przepisu</a>
+                    <p data-składniki="Składniki hot-doga: parówka, bułka, ketchup, majonez.">
+                        Gorąca parówka lub kiełbasa z zimnym sosem (majonez, ketchup) serwowana najczęściej w długiej bułce. Danie typowo amerykańskie oraz przykład jedzenia typu fast food.
+                    </p>
+                    <a href="przepisy/hotdog.html" class="przepis-btn">Przejdź do przepisu</a>
                 </div>
             </div>
             <div>
                 <img src="Res/img/Pizza.PNG" alt="Pizza">
                 <div class="przepis-content">
                     <h3>Pizza</h3>
-                    <p> Potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie, gdzie powstały jej nowe warianty. 
-                        Jest to płaski placek z ciasta drożdżowego (focaccia), z sosem pomidorowym, posypany tartym serem</p>
-                    <a href="przepisy/pizza.html">Przejdź do przepisu</a>
+                    <p data-składniki="Składniki pizzy: ciasto drożdżowe, sos pomidorowy, ser.">
+                        Potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie, gdzie powstały jej nowe warianty. Jest to płaski placek z ciasta drożdżowego (focaccia), z sosem pomidorowy.
+                    </p>
+                    <a href="przepisy/pizza.html" class="przepis-btn">Przejdź do przepisu</a>
                 </div>
             </div>
             <div>
                 <img src="Res/img/Frytki.PNG" alt="Frytki">
                 <div class="przepis-content">
                     <h3>Frytki</h3>
-                    <p>Tradycyjnie, w kraju pochodzenia czyli Belgii, pokrojone w kształt słupków i smażone w 
-                    głębokim tłuszczu ziemniaki albo inne warzywa. Idealne na wieczór z przyjaciółmi, robione również z batatów </p>
-                    <a href="przepisy/frytki.html">Przejdź do przepisu</a>
+                    <p data-składniki="Składniki frytek: ziemniaki, olej do smażenia.">
+                        Tradycyjnie, w kraju pochodzenia czyli Belgii, pokrojone w kształt słupków i smażone w głębokim tłuszczu ziemniaki albo inne warzywa. Idealne na wieczór z przyjaciółmi.
+                    </p>
+                    <a href="przepisy/frytki.html" class="przepis-btn">Przejdź do przepisu</a>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <section class="nowe">
         <h2>Najnowsze przepisy</h2>
@@ -134,6 +149,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Script/script.js"></script>
+
 </body>
 </html>
 

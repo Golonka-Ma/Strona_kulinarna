@@ -14,18 +14,32 @@
 </head>
 
 <body>
-    <header>
-        <header class="header">
-            <a href="#" class="logo">Smaki kuchni Świata</a>
-            <nav class="navbar">
+    <header class="header">
+        <a href="#" class="logo">Smaki kuchni Świata</a>
+        <nav class="navbar">
+            <a href="home_page.html">Strona główna</a>
+            <a href="about.html">O nas</a>
+            <a href="recipes.html">Przepisy</a>
+            <a href="services.html">Usługi</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="mobile">
+            <p class="remove"><i class="fa fa-remove"></i></p>
+            <div>
                 <a href="home_page.html">Strona główna</a>
                 <a href="about.html">O nas</a>
                 <a href="recipes.html">Przepisy</a>
                 <a href="services.html">Usługi</a>
                 <a href="contact.html">Kontakt</a>
-            </nav>
-        </header>
+            </div>
+        </nav>
     </header>
+</header>
 
 
     <div class="baner1">
@@ -54,7 +68,7 @@
                 <div class="przepis-content">
                     <h3>Pizza</h3>
                     <p> Potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie, gdzie powstały jej nowe warianty. 
-                        Jest to płaski placek z ciasta drożdżowego (focaccia), z sosem pomidorowym, posypany tartym serem</p>
+                        Jest to płaski placek z ciasta drożdżowego (focaccia), z sosem pomidorowym.</p>
                     <a href="przepisy/pizza.html">Przejdź do przepisu</a>
                 </div>
             </div>
@@ -63,11 +77,12 @@
                 <div class="przepis-content">
                     <h3>Frytki</h3>
                     <p>Tradycyjnie, w kraju pochodzenia czyli Belgii, pokrojone w kształt słupków i smażone w 
-                    głębokim tłuszczu ziemniaki albo inne warzywa. Idealne na wieczór z przyjaciółmi, robione również z batatów </p>
+                    głębokim tłuszczu ziemniaki albo inne warzywa. Idealne na wieczór z przyjaciółmi</p>
                     <a href="przepisy/frytki.html">Przejdź do przepisu</a>
                 </div>
             </div>
         </div>
+        <br>
         <div class="przepisy">
             <div>
                 <img src="Res/img/makaron.jpg" alt="makaron">
@@ -81,7 +96,7 @@
                 <img src="Res/img/shishkebab.jpg" alt="kebab">
                 <div class="przepis-content_keb">
                     <h3>Shish Kebab</h3>
-                    <p>Shish Kebab to klasyczne danie kuchni bliskowschodniej i śródziemnomorskiej, które zdobyło popularność na całym świecie ze względu na swoją prostotę i wyjątkowy smak. </p>
+                    <p>Shish Kebab to klasyczne danie kuchni bliskowschodniej i śródziemnomorskiej, które zdobyło popularność na całym świecie </p>
                     <a href="przepisy/kebab.html">Przejdź do przepisu</a>
                 </div>
             </div>
@@ -124,6 +139,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Script/script.js"></script>
 </body>
 </html>
 
